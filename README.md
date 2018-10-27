@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This short lesson summarizes the topics we covered in section 12 and why they'll be important to you as a data scientist.
+This short lesson summarizes the topics we covered in section 13 and why they'll be important to you as a data scientist.
 
 ## Objectives
 You will be able to:
@@ -12,13 +12,17 @@ You will be able to:
 
 ## Key Takeaways
 
-The goal of section 12 was to give you some practice going through the end to end process of obtaining, scrubbing, exploring (EDA), and modeling a given data set to create a prediction. Some of the key takeaways include:
-* It's important to think about providing value from your data science projects - not just modeling efficiently. Most of the business value comes from asking the right questions and persuasively communicating the results, and much of the predi ctive value comes from thoughtful selection, cleanup and exploration of the data set.
-* The most common data science frameworks are CRISP-DM, KDD and OSEMiN
-* The process of finding, filtering and loading the appropriate data to answer a question is non-trivial
-* Decisions made in the data munging/scrubbing phase can have a huge impact on the accuracy of your predictions
-* Visualization is a key phase in EDA. 
-* A Kernel Density Estimation (KDE) plot can be very useful in getting a sense for visualizing the distribution of a column
-* A Joint plots can be very useful for bringing together multiple visualizations to (for example) check the linearity assumption between predictors and a target variable
-* It's important to "hold out" a subset of your data for testing (as opposed to training) so you can see how accurately it works for predicting "unknown data"
+The goal of section 13 was to provide both a conceptual and computational introduction to Linear Algebra - one of the foundational concepts underlying most machine learning models. Some of the key takeaways include:
+* Understanding Linear Algebra will provide you a much stronger foundation when learning a range of data science topics - from Support Vector Machines and deep learning through Natural Language Processing and dimensionality reduction techniques like Principle Component Analysis
+* One use case for vectors and matrices is for representing and solving systems of linear equations
+* A scalar is a single, real number. A vector is a one dimensional array of numbers. A matrix is a 2 dimsional array of numbers. 
+* A tensor is a generalized term for an n-dimensional rectangular grid of numbers. A vector is a one-dimensional (first order) tensor, a matrix is a two-dimensional (second order tensor), etc.
+* Two matrices can be added together if they have the same shape
+* Scalars can be added to matrices by adding the scalar (number) to each element
+* Broadcasting allows for the additiona of matrices of different shapes by extending the dimensions of the smaller matrix to match the dimensions of the larger one
+* To calculate the dot product for matrix multiplication, the first matrix must have the same number of columns and the second has rows.
+* Matrix multiplication is distributive and associative, but not commutative
+* Operating on NumPy data types is substantially more computationally efficient than performing the same operations on native Python data types
+* It is possible to use Linear Algebra in NumPy to solve for a linear regression using the OLS method
+* OLS is not computationally efficient, so in practice we usually perform a gradient descent imstead to solve a linear regression
 
