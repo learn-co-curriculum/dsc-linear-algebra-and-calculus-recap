@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This short lesson summarizes the topics we covered in section 26 and why they'll be important to you as a data scientist.
+In this section, you learned the fundamentals of Linear Algebra. An understanding of Linear Algebra will help you better understand the underlying mathematics behind some machine learning algorithms.
 
 ## Objectives
 You will be able to:
